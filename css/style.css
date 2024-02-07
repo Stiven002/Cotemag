@@ -967,6 +967,11 @@
     .header{
         padding: 0%;
     }
+
+    .swiper__title-nav{
+        padding: 0%;
+    }
+
     
     .swiper__title{
         margin-left: 0%;
@@ -993,6 +998,7 @@
 @media (max-width: 560px){
     .swiper__title h1{
         font-size: 2rem;
+        line-height: 45px;
     }
 
     .swiper__title h2{
@@ -1010,9 +1016,6 @@
 
 @media (max-width: 420px){
     /* header */
-    .swiper__title h1{
-        font-size: 1.6rem;
-    }
 
     .swiper__title h2{
         font-size: 1.2rem;
