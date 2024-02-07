@@ -973,7 +973,7 @@
     }
 
     .swiper__title{
-        gap: 3rem;
+        gap: 3.5rem;
     }
 
     
@@ -1007,6 +1007,7 @@
 
     .swiper__title h2{
         font-size: 1.5rem;
+        line-height: 35px;
     }
 }
 
