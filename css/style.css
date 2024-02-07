@@ -972,6 +972,10 @@
         padding: 0%;
     }
 
+    .swiper__title{
+        gap: 3rem;
+    }
+
     
     .swiper__title{
         margin-left: 0%;
