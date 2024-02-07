@@ -49,13 +49,13 @@
             <!-- Menu principal -->
             <nav class="header__menu width__basic">
                 <img class="menu__img" src="./assets/img/Icons/LogoCotemag.png" loading="lazy" alt="Logo de Cotemag">
-                <div class="menu__icons">
+                <div class="menu__icons" id="menu">
                     <ul class="menu__list">
-                        <li>
-                            <a href="#">INICIO</a>
+                        <li class="menu__close">
+                            <a href="#">INICIO </a> <i class="fa-solid fa-x" id="menu-close"></i>
                         </li>
                         <li class="menu__list-item">
-                            <a href="#">CURSOS <i class="fa-solid fa-angle-down"></i></a>
+                            <a>CURSOS <i class="fa-solid fa-angle-down"></i></a>
                             <ul>
                                 <li>
                                     <a href="#">Salud</a>
@@ -75,7 +75,7 @@
                             </ul>
                         </li>
                         <li class="menu__list-item">
-                            <a href="#">INSTITUCION <i class="fa-solid fa-angle-down"></i></a>
+                            <a>INSTITUCION <i class="fa-solid fa-angle-down"></i></a>
                             <ul class="list__insti">
                                 <li>
                                     <a href="#">Sobre Nosotros</a>
@@ -108,6 +108,9 @@
                         </li>
                     </ul>
                 </div>
+                <div class="bugger__menu" id="menu-open">
+                    <i class="fa-solid fa-bars bugger__menu-icon"></i>
+                </div>
             </nav>
             <!-- Swiper -->
             <div class="swiper mySwiper">
@@ -136,19 +139,19 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper__cortine"></div>
-                        <img src="./assets/img/cover-14.webp" loading="lazy" alt="chica con libros">
+                        <img class="swiper__slide-img" src="./assets/img/cover-14.webp" loading="lazy" alt="chica con libros">
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper__cortine"></div>
-                        <img src="./assets/img/cover-7.webp" loading="lazy" alt="joven con computadora">
+                        <img class="swiper__slide-img" src="./assets/img/cover-7.webp" loading="lazy" alt="joven con computadora">
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper__cortine"></div>
-                        <img src="./assets/img/cover-4-1.webp" loading="lazy" alt="jovenes estudiando">
+                        <img class="swiper__slide-img" src="./assets/img/cover-4-1.webp" loading="lazy" alt="jovenes estudiando">
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper__cortine"></div>
-                        <img src="./assets/img/cover-1.webp" loading="lazy" alt="señor haciendo negocios">
+                        <img class="swiper__slide-img" src="./assets/img/cover-1.webp" loading="lazy" alt="señor haciendo negocios">
                     </div>
                 </div>
             </div>
