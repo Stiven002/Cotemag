@@ -220,6 +220,11 @@
     display: none;
 }
 
+.none__click{
+    cursor: default;
+}
+
+
 /* SUB MENU */
 
 .menu__list-item{

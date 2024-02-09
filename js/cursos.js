@@ -1,3 +1,8 @@
+// loader
+window.addEventListener("load", () => {
+  document.getElementById("loader").classList.toggle("loader__bg-2");
+});
+
 // seccion de lenguajes
 const lenguageButton = document.getElementById("lenguage"),
   options = document.getElementById("btn-lenguage"),
@@ -22,8 +27,13 @@ closeButton.addEventListener("click", () => {
 // swiper
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
+  loop: true,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".tutor__arrow-right",
+      prevEl: ".tutor__arrow-left",
+    },
+    pagination: {
+      el: ".swiper__tutor-pagination",
+      clickable: true,
     },
   });
