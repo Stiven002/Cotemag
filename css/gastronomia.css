@@ -880,6 +880,10 @@
        font-size: 18px;
     }
 
+    .tutor__arrow{
+        display: none;
+    }
+
         /* footer */
         .footer__tenic{
             flex-wrap: wrap;
