@@ -199,13 +199,13 @@
 }
 
 .menu__img{
-    width: 8rem;
+    width: 5rem;
     height: 100%;
 }
 
 .menu__list{
     display: flex;
-    gap: 2rem;
+    gap: .7rem;
     align-items: center;
     justify-content: center;
 }
@@ -214,6 +214,7 @@
     padding: 40px 0px;
     font-weight: 600;
     color: var(--white);
+    font-size: .9rem;
 }
 
 .menu__close i{
@@ -233,7 +234,7 @@
 }
 
 .menu__list-item ul{
-    width: 9rem;
+    width: 9.5rem;
     display: flex;
     flex-direction: column;
     background-color: var(--white);
@@ -854,6 +855,10 @@
 
     .menu__close i{
         display: block;
+    }
+
+    .menu__icons{
+        overflow: scroll;
     }
 
     .swiper__navegation-1{
