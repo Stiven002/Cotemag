@@ -237,7 +237,7 @@
     width: 9.5rem;
     display: flex;
     flex-direction: column;
-    background-color: var(--white);
+    background-color: var(--secundari-color);
     position: absolute;
     top: 6rem;
     padding: .8rem 0rem;
@@ -249,7 +249,11 @@
 }
 
 .list__insti{
-    width: 12rem !important;
+    width: 13rem !important;
+}
+
+.short{
+    width: 9rem !important;
 }
 
 .menu__list-item:hover ul{
@@ -261,11 +265,11 @@
 .menu__list-item ul li a{
     padding: 0px 0px 0px 15px;
     margin: .4rem 0rem;
-    color: var(--subMenu-item);
+    color: var(--font-color);
 }
 
 .menu__list-item ul li a:hover{
-    color: #000;
+    color: var(--white);
 }
 
 /* menu responsive */
@@ -788,7 +792,7 @@
     .menu__icons{
         height: 95vh;
         width: 95%;
-        background-color: var(--white);
+        background-color: var(--secundari-color);
         position: fixed;
         top: 0;
         left: 0;
@@ -813,8 +817,13 @@
         padding: 0px 20px;
     }
 
+    .short{
+        width: 100% !important;
+    }
+    
+
     .menu__list > li > a{
-        color: #000;
+        color: var(--white);
         padding: .5rem;
     }
 
@@ -855,6 +864,7 @@
 
     .menu__close i{
         display: block;
+        color: var(--white);
     }
 
     .menu__icons{
