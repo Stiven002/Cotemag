@@ -47,16 +47,21 @@
                 </div>
             </div>
             <!-- Menu principal -->
-            <nav class="header__menu width__basic">
-                <img class="menu__img" src="./assets/img/Icons/LogoCotemag.png" loading="lazy" alt="Logo de Cotemag">
+            <nav class="header__menu">
+                <div class="menu__logos">
+                    <img class="menu__img" src="./assets/img/Icons/LogoCotemag.png" loading="lazy" alt="Logo de Cotemag">
+                    <div class="bugger__menu" id="menu-open">
+                        <i class="fa-solid fa-bars bugger__menu-icon"></i>
+                    </div>
+                </div>
                 <div class="menu__icons" id="menu">
                     <ul class="menu__list">
                         <li class="menu__close">
-                            <a href="#">INICIO </a> <i class="fa-solid fa-x" id="menu-close"></i>
+                            <a href="#">Inicio </a> <i class="fa-solid fa-x" id="menu-close"></i>
                         </li>
                         <li class="menu__list-item">
-                            <a class="none__click">OFERTA ACADEMICA <i class="fa-solid fa-angle-down"></i></a>
-                            <ul class="short">
+                            <a class="none__click" id="sub__menu-open">Oferta Academica <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="short" id="submenu">
                                 <li>
                                     <a href="#">Tecnicos</a>
                                 </li>
@@ -66,8 +71,8 @@
                             </ul>
                         </li>
                         <li class="menu__list-item">
-                            <a class="none__click">NUESTRO PERSONAL <i class="fa-solid fa-angle-down"></i></a>
-                            <ul class="list__insti short">
+                            <a class="none__click" id="sub__menu-open1">Nuestro Personal <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="list__insti short" id="submenu1">
                                 <li>
                                     <a href="#">Docentes</a>
                                 </li>
@@ -77,8 +82,8 @@
                             </ul>
                         </li>
                         <li class="menu__list-item">
-                            <a class="none__click">ALIANZAS <i class="fa-solid fa-angle-down"></i></a>
-                            <ul class="list__insti">
+                            <a class="none__click" id="sub__menu-open2">Alianzas <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="list__insti" id="submenu2">
                                 <li>
                                     <a href="#">Convenios de practicas</a>
                                 </li>
@@ -88,8 +93,8 @@
                             </ul>
                         </li>
                         <li class="menu__list-item">
-                            <a class="none__click">GALERIA <i class="fa-solid fa-angle-down"></i></a>
-                            <ul class="list__insti short">
+                            <a class="none__click" id="sub__menu-open3">Galeria <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="list__insti short" id="submenu3">
                                 <li>
                                     <a href="#">Grados</a>
                                 </li>
@@ -102,8 +107,8 @@
                             </ul>
                         </li>
                         <li class="menu__list-item">
-                            <a class="none__click">ADMINISTRACIÓN <i class="fa-solid fa-angle-down"></i></a>
-                            <ul class="list__insti">
+                            <a class="none__click" id="sub__menu-open4">Administracion <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="list__insti" id="submenu4">
                                 <li>
                                     <a href="#">QIO Academico</a>
                                 </li>
@@ -122,20 +127,17 @@
                             </ul>
                         </li>
                         <li class="menu__list-item">
-                            <a class="none__click">DESARROLLO WEB <i class="fa-solid fa-angle-down"></i></a>
-                            <ul class="list__insti">
+                            <a class="none__click" id="sub__menu-open5">Desarrollo Web <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="list__insti" id="submenu5">
                                 <li>
                                     <a href="#">Consultor DevCom</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#">CONTACTENOS</a>
+                            <a href="#">Contacto</a>
                         </li>
                     </ul>
-                </div>
-                <div class="bugger__menu" id="menu-open">
-                    <i class="fa-solid fa-bars bugger__menu-icon"></i>
                 </div>
             </nav>
             <!-- Swiper -->

@@ -60,3 +60,24 @@ let swiperCourse = new Swiper(".mySwipere", {
     }
   }
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const subMenus = document.querySelectorAll('.menu__list-item');
+  
+  subMenus.forEach(subMenu => {
+      subMenu.addEventListener('click', function () {
+          // Cerrar todos los sub-menús
+          subMenus.forEach(menu => {
+              if (menu !== subMenu) {
+                  menu.querySelector('ul').classList.remove('show');
+              }
+          });
+
+          // Toggle (abrir/cerrar) el sub-menú actual
+          const submenuList = subMenu.querySelector('ul');
+          submenuList.classList.toggle('show');
+      });
+  });
+});
