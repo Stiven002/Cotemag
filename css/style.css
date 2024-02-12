@@ -95,6 +95,13 @@
     transition: clip-path 0.8s ease-in-out;
 }
 
+.loader__bg h2{
+    color: var(--white);
+    font-size: 1.5rem;
+    position: absolute;
+    margin-top: 13rem;
+}
+
 .loader__bg-2{
     clip-path: circle(0% at 50% 50%);
 }
