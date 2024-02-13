@@ -18,11 +18,9 @@ const openButton = document.getElementById("menu-open"),
   closeButton = document.getElementById("menu-close");
 
 openButton.addEventListener("click", () => {
-  menu.classList.add("menu-open");
+  menu.classList.toggle("menu-open");
 });
-closeButton.addEventListener("click", () => {
-  menu.classList.remove("menu-open");
-});
+
 
 // swiper del header
 var swiper = new Swiper(".mySwiper", {
@@ -63,21 +61,52 @@ let swiperCourse = new Swiper(".mySwipere", {
 
 
 
+
+
 document.addEventListener('DOMContentLoaded', function () {
   const subMenus = document.querySelectorAll('.menu__list-item');
-  
-  subMenus.forEach(subMenu => {
-      subMenu.addEventListener('click', function () {
-          // Cerrar todos los sub-menús
-          subMenus.forEach(menu => {
-              if (menu !== subMenu) {
-                  menu.querySelector('ul').classList.remove('show');
-              }
-          });
 
-          // Toggle (abrir/cerrar) el sub-menú actual
-          const submenuList = subMenu.querySelector('ul');
-          submenuList.classList.toggle('show');
+  function closeSubMenus() {
+      subMenus.forEach(menu => {
+          const submenuList = menu.querySelector('ul');
+          submenuList.classList.remove('show');
       });
+  }
+
+  function handleMenuClick(event) {
+      event.preventDefault();
+
+      // Toggle (abrir/cerrar) el sub-menú actual
+      const submenuList = this.querySelector('ul');
+      submenuList.classList.toggle('show');
+
+      // Cerrar todos los demás sub-menús
+      subMenus.forEach(menu => {
+          if (menu !== this) {
+              const otherSubmenuList = menu.querySelector('ul');
+              otherSubmenuList.classList.remove('show');
+          }
+      });
+  }
+
+  subMenus.forEach(subMenu => {
+      subMenu.addEventListener('click', handleMenuClick);
+  });
+
+  // Cerrar todos los sub-menús cuando se hace clic fuera del menú
+  document.addEventListener('click', function (event) {
+      const isMenuClick = event.target.closest('.menu__icons');
+      if (!isMenuClick) {
+          closeSubMenus();
+      }
+  });
+
+  // Limpiar estilos en el modo responsive al cambiar el tamaño de la ventana
+  window.addEventListener('resize', function () {
+      if (window.innerWidth > 1200) {
+          // Si estamos en el modo normal, cerrar todos los sub-menús
+          closeSubMenus();
+          menu.classList.remove("menu-open");
+      }
   });
 });
