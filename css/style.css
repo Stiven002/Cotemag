@@ -1032,6 +1032,9 @@
     .swiper__title h2{
         font-size: 1.5rem;
     }
+    .menu__logos{
+        padding: 0rem 1rem;
+    }
 
     /* noticias */
     .news__cards-container{
