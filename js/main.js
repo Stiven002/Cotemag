@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function handleMenuClick(event) {
-      event.preventDefault();
+      
 
       // Toggle (abrir/cerrar) el sub-menú actual
       const submenuList = this.querySelector('ul');

@@ -243,38 +243,38 @@
 
 /* SUB MENU */
 
-.menu__list-item{
+.menu__list-item {
     height: 100%;
     position: relative;
 }
 
-.menu__list-item ul{
-    width: 9.5rem;
+.menu__list-item ul {
     display: flex;
     flex-direction: column;
     background-color: var(--white);
     position: absolute;
-    top:6rem;
+    top: 6rem;
     padding: 0rem 0rem;
     visibility: hidden;
-    opacity: 0; 
-    z-index: 10;
-    transition: all 300ms ease;
+    opacity: 0;
+    z-index: 90;
+    transition: visibility 300ms ease, opacity 300ms ease, top 300ms ease;
 }
 
-.list__insti{
-    width: 13rem !important;
+.list__insti {
+    width: 13rem;
 }
 
-.short{
-    width: 9rem !important;
+.short {
+    width: 9rem;
 }
 
-.show{
-    visibility: visible !important;
-    opacity: 1 !important;
-    top: 4.2rem !important;
+.menu__list-item ul.show {
+    visibility: visible;
+    opacity: 1;
+    top: 4.2rem;
 }
+
 
 .menu__list-item ul li a{
     padding: 10px 0px 10px 15px;
