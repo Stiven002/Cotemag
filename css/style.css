@@ -133,7 +133,7 @@
 .menu__top-contact{
     display: flex;
     gap: .5rem;
-    color: var(--white);
+    color: var(--secundari-color);
 }
 
 .contect__link{
@@ -141,7 +141,8 @@
 }
 
 .contect__link:hover{
-    color: var(--font-color);
+    color: var(--primar-color-sub);
+    transition: all .1s;
 }
 
 /* redes sociales */
@@ -157,12 +158,13 @@
 }
 
 .social__icon{
-    color: var(--white);
+    color: var(--secundari-color);
     font-size: 1rem;
 }
 
 .social__icon:hover{
-    color: var(--font-color);
+    color: var(--primar-color-sub);
+    transition: all .1s;
 }
 
 /* lenguajes */
