@@ -35,6 +35,10 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper__navegation-1",
     clickable: true,
   },
+  autoplay:{
+    display: 4000,
+    disableOnInteraction: false,
+  }
 });
 
 
