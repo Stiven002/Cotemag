@@ -200,6 +200,12 @@
     color: var(--font-color-black);
 }
 
+#btn-aplicar:hover{
+    background-color: var(--font-color) !important;
+    color: var(--secundari-color) !important;
+    transition: all .4s !important;
+}
+
 /* MENU PRINCIPAL*/
 .header__menu{
     display: flex;
@@ -336,14 +342,18 @@
 /* menu responsive */
 .bugger__menu{
     width: 45px;
-    height: 45px;
-    background-color: var(--primar-color);
+    height: 45px;   
     border-radius: 5px;
     justify-content: center;
     align-items: center;
-    font-size: 1.3rem;
+    font-size: 2.3rem;
     color: var(--font-color);
     display: none;
+}
+
+.bugger__menu:hover{
+    color: var(--primar-color);
+    transition: all .3s;
 }
 
 
@@ -459,6 +469,18 @@
 
 .arrow__container:hover i{
     color: #257cab;
+}
+
+/*EFECTO HOVER PARA LAS FLECHAS*/
+
+#flechaderecha:hover{
+    transition: all .3s !important;
+    background-color: var(--primar-color-sub);
+}
+
+#flechaizquierda:hover{
+    transition: all .3s !important;
+    background-color: var(--primar-color-sub);
 }
 
 .swiper__navegation-1{
@@ -862,6 +884,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 0rem 4rem;
+        height: 100%;
     }
 
     .menu__icons{
@@ -872,7 +895,7 @@
         padding: 2rem 1rem;
         clip-path: inset(0 0 100% 100%);
         transition: clip-path 0.1s ease-in-out;
-        margin-top: -5px;
+        margin-top: -16px;
     }
 
     .menu__list{
