@@ -698,6 +698,75 @@
     height: 400px;
 }
 
+/*COLLAGE VIDEOS*/
+.container-videos{
+    width: var(--max-width);
+    height: 45vh;
+    display: flex;
+    gap: 20px;
+    z-index: 20;
+    transform: translateY(50%);
+}
+
+.firstsubcontainer-videos{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 6px 23px 0px rgba(0,0,0,0.75);
+}
+
+.secondsubcontainer-videos{
+    width: 50%;
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 2px 6px 23px 0px rgba(0,0,0,0.75);
+    gap: 20px;
+}
+
+.firstsubcontainer-videos .desarrollowebcotemag{
+    border-radius: 10px;
+    width: 1280px;
+    height: 720px;
+    background-position: center center;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    box-shadow: 2px 6px 23px 0px rgba(0,0,0,0.75);
+}
+
+.secondsubcontainer-videos .firstvideo{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 6px 23px 0px rgba(0,0,0,0.75);
+}
+
+
+.secondsubcontainer-videos .secondvideo{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 6px 23px 0px rgba(0,0,0,0.75);
+}
+
+.secondsubcontainer-videos .firstvideo .primerainfancia{
+    width: 100%;
+    height: 100%;
+}
 /* seccion de noticias */
 .news__container{
     background-color: var(--white);
