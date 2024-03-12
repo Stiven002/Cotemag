@@ -1091,6 +1091,100 @@
     .news__container{
         padding: 6rem 0rem 2rem 0rem;
     }
+
+    
+
+    /*COLLAGE VIDEOS*/
+.container-videos{
+    width: var(--max-width);
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    z-index: 20;
+    transform: translateY(0);
+}
+
+.firstsubcontainer-videos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 6px 23px 0px rgba(0,0,0,0.75);
+    z-index: 20;
+    background-image: url(/assets/img/tumbaildesarrolloweb.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.secondsubcontainer-videos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 6px 23px 0px rgba(0,0,0,0.75);
+    z-index: 20;
+    background-image: url(/assets/img/tumbailprimerainfancia.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#playYoutube{
+    font-size: 90px;
+    color: #ff0000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+#playYoutube:hover{
+    font-size: 90px;
+    color: #ff5151;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    transition: all .3s;
+    cursor: pointer;
+}
+
+#reproduccionuno{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 6px 23px 0px rgba(0,0,0,0.75);
+    z-index: 20;
+}
+
+#reproducciondos{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 6px 23px 0px rgba(0,0,0,0.75);
+    z-index: 20;
+}
+
+
+
 }
 
 @media(max-width: 980px){
