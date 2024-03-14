@@ -22,15 +22,17 @@
 .menu__top-contact{
     display: flex;
     gap: .5rem;
-    color: var(--white);
+    color: var(--secundari-color);
 }
 
 .contect__link{
     font-size: 13px;
+    font-weight: 600;
 }
 
 .contect__link:hover{
-    color: var(--font-color);
+    color: #ffffff;
+    transition: all .2s;
 }
 
 /* redes sociales */
@@ -46,12 +48,13 @@
 }
 
 .social__icon{
-    color: var(--white);
+    color: var(--secundari-color);
     font-size: 1rem;
 }
 
 .social__icon:hover{
     color: var(--font-color);
+    transition: all .2s;
 }
 
 
