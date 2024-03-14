@@ -19,7 +19,7 @@
             <!-- Menu principal -->
             <nav class="header__menu">
                 <div class="menu__logos">
-                    <img class="menu__img" src="/cotemag_php/assets/img/Icons/LogoCotemag.png" loading="lazy" alt="Logo de Cotemag">
+                    <img class="menu__img" src="/cotemag/assets/img/Icons/LogoCotemag.png" loading="lazy" alt="Logo de Cotemag">
                     <div class="bugger__menu" id="menu-open">
                         <i class="fa-solid fa-bars bugger__menu-icon"></i>
                     </div>
@@ -33,7 +33,7 @@
                             <a class="none__click" id="sub__menu-open">Oferta Academica <i class="fa-solid fa-angle-down"></i></a>
                             <ul class="short" id="submenu">
                                 <li>
-                                    <a href="/cotemag_php/assets/pages/gastronomia.php">Tecnicos</a>
+                                    <a href="/cotemag_php/assets/pages/areas.php">Tecnicos</a>
                                 </li>
                                 <li>
                                     <a href="/cotemag_php/assets/pages/salud.php">Diplomados</a>
