@@ -102,6 +102,23 @@
     height: 50vh;
 }
 
+/*SECCION AREAS*/
+
+.contenedor__areas{
+    display: flex;
+    width: var(--max-width);
+    gap: 20px;
+    margin-top: 20px;
+}
+.seccionLateralIzquierda{
+    width: 30%;
+    border: solid 1px black;
+    height: 400px;
+}
+
+.seccionLateralDerecha{
+    width: 100%;
+}
 
 /* portada */
 
@@ -196,7 +213,7 @@
 .main__cursos{
     display: flex;
     gap: 1rem;
-    margin-top: 6rem;
+    margin-top: 0rem;
     flex-direction: column;
 }
 
