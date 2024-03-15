@@ -94,7 +94,12 @@
 /* header */
 .header{
     position: relative;
-    height: 95vh;
+    height: 50vh;
+}
+
+#header__areas{
+    width: 100%;
+    height: 50vh;
 }
 
 
@@ -105,7 +110,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
+    background-position: center center;
+    object-fit: cover;
     z-index: -2;
 }
 
@@ -121,7 +128,7 @@
 .header__titles{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 140%;
     display: flex;
     flex-direction: column;
     justify-content: center;

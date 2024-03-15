@@ -27,16 +27,16 @@
                 <div class="menu__icons" id="menu">
                     <ul class="menu__list">
                         <li class="menu__close">
-                            <a href="/cotemag_php/index.php">Inicio </a></i>
+                            <a href="/cotemag/index.php">Inicio </a></i>
                         </li>
                         <li class="menu__list-item">
                             <a class="none__click" id="sub__menu-open">Oferta Academica <i class="fa-solid fa-angle-down"></i></a>
                             <ul class="short" id="submenu">
                                 <li>
-                                    <a href="/cotemag_php/assets/pages/areas.php">Tecnicos</a>
+                                    <a href="/cotemag/assets/pages/areas.php">Tecnicos</a>
                                 </li>
                                 <li>
-                                    <a href="/cotemag_php/assets/pages/salud.php">Diplomados</a>
+                                    <a href="/cotemag/assets/pages/salud.php">Diplomados</a>
                                 </li>
                             </ul>
                         </li>
