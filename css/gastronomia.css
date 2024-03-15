@@ -152,14 +152,11 @@
 }
 
 /*SECCION DEL SOMBREADO CUANDO SE PRESIONA EN ALGUNO*/
-.seccionLateralIzquierda ol li a.active {
-    background-color: red; /* Cambiar al color deseado para el resaltado */
-    color: #333; /* Cambiar al color deseado para el texto resaltado */
-}
-
 .seccionLateralDerecha{
     width: 100%;
     padding: 20px;
+    display: flex;
+    gap: 30px;
 }
 
 /* portada */
