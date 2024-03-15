@@ -119,6 +119,7 @@
     padding: 20px;
     border-radius: 10px;
     z-index: 40;
+    background-color: white;
 }
 
 
@@ -130,6 +131,12 @@
 
 .seccionLateralIzquierda ol li{
     padding-left: 20px;
+}
+
+.seccionLateralIzquierda ol li:hover{
+    color: #005480;
+    transition: all .3s;
+    font-weight: 300;
 }
 
 .seccionLateralIzquierda ol li i{
