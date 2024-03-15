@@ -41,21 +41,21 @@
 <aside class="seccionLateralIzquierda">
         <h2 class="title_menulateral">AREAS DE ESTUDIO</h2>
 
-        <ol>
-            <li><i class="fa-solid fa-chevron-right"></i>ADMINISTRATIVA</li>
-            <li><i class="fa-solid fa-chevron-right"></i>BACHILLERATOS POR CICLOS CLEI</li>
-            <li><i class="fa-solid fa-chevron-right"></i>BELLEZA Y BIENESTAR CORPORAL</li>
-            <li><i class="fa-solid fa-chevron-right"></i>DESARROLLO DE SOFTWARE</li>
-            <li><i class="fa-solid fa-chevron-right"></i>DIPLOMADOS Y CURSOS</li>
-            <li><i class="fa-solid fa-chevron-right"></i>DISEÑO GRAFICO</li>
-            <li><i class="fa-solid fa-chevron-right"></i>EDUCACION</li>
-            <li><i class="fa-solid fa-star" id="starGastronomia"></i><b id="weighGastronomia">GASTRONOMIA</b></li>
-            <li><i class="fa-solid fa-chevron-right"></i>IDIOMAS</li>
-            <li><i class="fa-solid fa-chevron-right"></i>INVESTIGATIVA Y JUDICIAL</li>
-            <li><i class="fa-solid fa-chevron-right"></i>INDUSTRIAL</li>
-            <li><i class="fa-solid fa-chevron-right"></i>SALUD</li></a>
-            <li><i class="fa-solid fa-chevron-right"></i>SALUD ANIMAL</li>
-            <li><i class="fa-solid fa-chevron-right"></i>SERVICIOS GENERALES</li>
+        <ol class="menuLateral">
+            <li><a href="#"><i class="fa-solid fa-chevron-right"></i>ADMINISTRATIVA</a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-right"></i>BACHILLERATOS POR CICLOS CLEI</a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-right"></i>BELLEZA Y BIENESTAR CORPORAL</a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-right"></i>DESARROLLO DE SOFTWARE</a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-right"></i>DIPLOMADOS Y CURSOS</a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-right"></i>DISEÑO GRAFICO</a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-right"></i>EDUCACION</a></li>
+            <li><a href="#"><i class="fa-solid fa-star" id="starGastronomia"></i><b id="weighGastronomia">GASTRONOMIA</b></a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-right"></i>IDIOMAS</a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-right"></i>INVESTIGATIVA Y JUDICIAL</a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-right"></i>INDUSTRIAL</a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-right"></i>SALUD</a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-right"></i>SALUD ANIMAL</a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-right"></i>SERVICIOS GENERALES</a></li>
         </ol>
     </aside>
 

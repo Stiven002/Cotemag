@@ -118,6 +118,7 @@
     gap: 5px;
     padding: 20px;
     border-radius: 10px;
+    z-index: 40;
 }
 
 
@@ -142,6 +143,13 @@
 #weighGastronomia{
     font-weight: 700;
 }
+
+/*SECCION DEL SOMBREADO CUANDO SE PRESIONA EN ALGUNO*/
+.seccionLateralIzquierda ol li a.active {
+    background-color: red; /* Cambiar al color deseado para el resaltado */
+    color: #333; /* Cambiar al color deseado para el texto resaltado */
+}
+
 .seccionLateralDerecha{
     width: 100%;
     padding: 20px;
