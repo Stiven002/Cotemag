@@ -107,17 +107,44 @@
 .contenedor__areas{
     display: flex;
     width: var(--max-width);
-    gap: 20px;
+    gap: 60px;
     margin-top: 20px;
 }
 .seccionLateralIzquierda{
-    width: 30%;
-    border: solid 1px black;
-    height: 400px;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+    border-radius: 10px;
 }
 
+
+.seccionLateralIzquierda ol{
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+}
+
+.seccionLateralIzquierda ol li{
+    padding-left: 20px;
+}
+
+.seccionLateralIzquierda ol li i{
+    padding-right: 4px;
+}
+
+#starGastronomia{
+    color: var(--primar-color);
+}
+
+#weighGastronomia{
+    font-weight: 700;
+}
 .seccionLateralDerecha{
     width: 100%;
+    padding: 20px;
 }
 
 /* portada */
@@ -165,6 +192,12 @@
 
 .header__titles p{
     font-size: 1.9rem;
+}
+
+.title_menulateral{
+    font-size: 20px;
+    color: var(--secundari-color);
+    font-weight: 600;
 }
 
 /* main */
