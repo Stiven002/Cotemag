@@ -111,6 +111,7 @@ $cards = array(
         ),
     ),
     array(
+        //Card
         'titulo' => 'Técnico Laboral por Competencias Repostero Pastelero',
         'imagen' => 'https://www.cotemag.edu.co//uploads/images/system/private/servicios/Resposteria1.jpeg',
         'duracion' => '1 años y medio',
@@ -119,6 +120,7 @@ $cards = array(
         'nivel' => 'Técnico Laboral por Competencias Repostero Pastelero',
         'modal-duracion' => 'Duración: 18 Módulos / 3 Semestres / 1.800 horas.',
         'descripcion' => 'El egresado de Técnico Laboral por Competencias Repostero Pastelero de la Escuela de Gastronomía de COTEMAG, estará en capacidad de preparar y hornear masas para pasteles, panes, panecillos, pizzas, rellenos, cubiertas, tortas, dulces y batidos para galletas de acuerdo con recetas u órdenes especiales del cliente, además de realizar pedidos para la producción y elaboración de productos específicos.',
+        //Modal
         'modulos_lista' => array(
             'ÉTICA Y VALORES TÉCNICO',
             'FUNDAMENTOS DE SEGURIDAD Y SALUD EN EL TRABAJO',
@@ -161,6 +163,7 @@ $cards = array(
         ),
     ),
     array(
+        //Card
         'titulo' => 'Bartender',
         'imagen' => 'https://www.cotemag.edu.co//uploads/images/system/private/servicios/Bartender1080x10801.png',
         'duracion' => '1 años',
@@ -169,6 +172,7 @@ $cards = array(
         'nivel' => 'Técnico Laboral por Competencias Repostero Pastelero',
         'modal-duracion' => 'Duración: 12 Módulos / 2 Semestres / 1.056 horas.',
         'descripcion' => 'El barman es un profesional que se encarga de atender la barra de un bar. Su principal función es la de preparar y servir las distintas bebidas de la carta de un local de copas, de una cafetería, de un pub, de una discoteca, etc. <br> Este profesional, por lo tanto, puede trabajar en diferentes tipos de negocios del sector de la hostelería. Si te formas adecuadamente, podrás optar a una amplia variedad de salidas laborales.',
+        //Modal
         'modulos_lista' => array(
             'ÉTICA Y VALORES TÉCNICO',
             'FUNDAMENTOS DE SEGURIDAD Y SALUD EN EL TRABAJO',
