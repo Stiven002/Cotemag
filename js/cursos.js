@@ -51,3 +51,21 @@ document.addEventListener("touchcancel", dragStop);
 
 carrousel.addEventListener("mousedown", dragStar);
 carrousel.addEventListener("touchstart", dragStar);
+
+// Función para mover el carrusel automáticamente de forma infinita
+const moveAutomatically = () => {
+    const firstItemWidth = firstItem.clientWidth + 16;
+    const totalWidth = carrousel.scrollWidth;
+
+    // Si el carrusel está en el último elemento, vuelve al primero
+    if (carrousel.scrollLeft + carrousel.clientWidth >= totalWidth) {
+        carrousel.scrollLeft = 0;
+    } else {
+        carrousel.scrollLeft += firstItemWidth; // Mover al siguiente item
+    }
+    
+    setTimeout(() => showHideIcon(), 60);
+};
+
+// Llamar a la función cada 5 segundos
+setInterval(moveAutomatically, 5000);
