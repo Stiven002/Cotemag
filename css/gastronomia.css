@@ -107,7 +107,7 @@
     margin-top: 20px;
 }
 .seccionLateralIzquierda{
-    width: 35%;
+    width: 25%;
     min-width: 300px;
     height: 100%;
     display: flex;
@@ -117,6 +117,8 @@
     border-radius: 10px;
     z-index: 40;
     background-color: white;
+    position: sticky;
+    top: 2%;
 }
 
 
@@ -290,6 +292,7 @@
 
 .card__curse {
     height: 350px;
+    width: 30% !important;
     background-color: var(--white);
     padding: .5rem;
     border-radius: 5px;
