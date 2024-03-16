@@ -112,7 +112,7 @@ if (!empty($card['practica_laboral'])) {
     <main class="main basic__style">
 
     <!--Menu lateral izquierdo-->
-<div class="contenedor__areas width__basic">
+<div class="contenedor__areas width__basic" id="containerdelosCursos">
 
 <aside class="seccionLateralIzquierda">
         <h2 class="title_menulateral">AREAS DE ESTUDIO</h2>

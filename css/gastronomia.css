@@ -651,6 +651,13 @@
         padding: 0% 2%;
     }
 
+    #containerdelosCursos{
+        display: flex;
+        flex-direction: column !important;
+    }
+
+   
+
 }
 
 @media (max-width:1130px){
