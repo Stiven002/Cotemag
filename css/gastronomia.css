@@ -94,24 +94,21 @@
 /* header */
 .header{
     position: relative;
-    height: 50vh;
+    height: 70vh;
 }
 
-#header__areas{
-    width: 100%;
-    height: 50vh;
-}
 
 /*SECCION AREAS*/
 
 .contenedor__areas{
     display: flex;
-    width: var(--max-width);
-    gap: 60px;
+
+    gap: 30px;
     margin-top: 20px;
 }
 .seccionLateralIzquierda{
     width: 35%;
+    min-width: 300px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -151,13 +148,7 @@
     font-weight: 700;
 }
 
-/*SECCION DEL SOMBREADO CUANDO SE PRESIONA EN ALGUNO*/
-.seccionLateralDerecha{
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    gap: 30px;
-}
+
 
 /* portada */
 
@@ -184,7 +175,7 @@
 .header__titles{
     position: absolute;
     width: 100%;
-    height: 140%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -195,9 +186,11 @@
     left: 0;
     cursor: default;
     user-select: none;
+    text-align: center;
 }
 
 .header__titles h1{
+    margin-top: 5rem;
     font-size: 5rem;
     font-weight: 600;
 }
@@ -215,6 +208,7 @@
 /* main */
 .main{
     background-color: var(--primar-color-sub);
+    padding: 4rem 0rem;
 }
 
 .main__info{
@@ -257,9 +251,16 @@
 /* cursos */
 .main__cursos{
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     margin-top: 0rem;
     flex-direction: column;
+}
+
+.secction__curso-container{
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    margin-bottom: 1rem;
 }
 
 .curso__title{
@@ -281,15 +282,14 @@
 
 .cursos__container{
     display: flex;
-    gap: 2rem;
-    justify-content: center;
+    width: 100%;
+    gap: 1rem;
     align-items: center;
-    margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
-.card__curse{
-    width: 31%;
-    height: 460px;
+.card__curse {
+    height: 350px;
     background-color: var(--white);
     padding: .5rem;
     border-radius: 5px;
@@ -299,10 +299,24 @@
     gap: 1rem;
 }
 
+.cursos__container.single .card__curse {
+    width: 40%; /* Ancho para una sola tarjeta */
+    max-width: 400px;
+}
+
+.cursos__container.two .card__curse {
+    width: calc(80% /2); /* Ancho para dos tarjetas */
+}
+
+.cursos__container.multiple .card__curse {
+    width: calc(80%/ 3); /* Ancho para tres o más tarjetas */
+}
+
+
 .curso__img{
     overflow: hidden;
     border-radius: 5px;
-    height: 350px;
+    height: 300px;
 }
 
 .curso__img img{
@@ -318,7 +332,7 @@
 
 
 .card__curse h3{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -326,12 +340,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: .3rem;
 }
 
 .curso__info p{
     color: var(--font-color-black);
-    font-size: .9rem;
+    font-size: .8rem;
 }
 
 /* modal */
@@ -628,7 +641,7 @@
 
     .header{
         padding: 0% 7%;
-        height: 95vh;
+        height: 85vh;
     }
 
     .width__basic{
@@ -639,19 +652,17 @@
 
 @media (max-width:1130px){
     /* cursor */
-    .cursos__container{
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
+
 
     .card__curse{
-        width: 48%;
+        width: calc(95% / 3);
     }
 }
 
-@media screen and (max-width: 900px) {
-    .item_carousel {
-        width: calc(96.5% / 2);
+@media screen and (max-width: 950px) {
+
+    .card__curse{
+        width: calc(95% / 2);
     }
 }
 
@@ -665,23 +676,31 @@
         font-size: 1.5rem;
     }
 
-    .cursos__container{
-        justify-content: center;
-    }
-
-    .card__curse{
-        width: 80%;
-    }
 
     .item_carousel {
         width: calc(96.5% / 2);
     }
+
+    .cursos__container.single .card__curse {
+        width: 60%; /* Ancho para una sola tarjeta */
+        max-width: 400px;
+    }
+    
+    .cursos__container.two .card__curse {
+        width: calc(80% /2); /* Ancho para dos tarjetas */
+    }
+    
+    .cursos__container.multiple .card__curse {
+        width: calc(80%/ 3); /* Ancho para tres o más tarjetas */
+    }
+    
 }
 
 
 
 
   @media only screen and (min-width: 768px) {
+
 
     .swiper-slide {
       flex-direction: row;
@@ -698,27 +717,23 @@
   }
  
   @media (max-width: 767px){
-    .header{
-        height: 80vh;
-    }
-    .swiper-slide::before {
-       width: 300%;
-       height: 200px;
-       transform: rotate(0);
-    }
-    .user__card-info h3 {
-       margin-top: 25px;
-       font-size: 35px;
-    }
-    .user__card-info p span {
-       display: block;
-       margin-bottom: 15px;
-       font-size: 18px;
-    }
 
-    .tutor__arrow{
-        display: none;
+    .card__curse{
+        width: 100%;
     }
+    .cursos__container.single .card__curse {
+        width: 100%; /* Ancho para una sola tarjeta */
+        max-width: 400px;
+    }
+    
+    .cursos__container.two .card__curse {
+        width: calc(90% /2); /* Ancho para dos tarjetas */
+    }
+    
+    .cursos__container.multiple .card__curse {
+        width: calc(90%/ 2); /* Ancho para tres o más tarjetas */
+    }
+    
 
         /* footer */
         .footer__tenic{
@@ -747,7 +762,7 @@
         }
 
         .modal__container h2{
-            font-size: 2rem;
+            font-size: 1.5rem;
             line-height: 45px;
         }
   }
@@ -766,6 +781,20 @@
         top: -80px;
         left: -150px;
     }
+
+    .cursos__container.single .card__curse {
+        width: 100%; /* Ancho para una sola tarjeta */
+        max-width: 400px;
+    }
+    
+    .cursos__container.two .card__curse {
+        width: 100%; /* Ancho para dos tarjetas */
+    }
+    
+    .cursos__container.multiple .card__curse {
+        width: 100%; /* Ancho para tres o más tarjetas */
+    }
+    
 }
 
 @media (max-width: 500px){
@@ -784,13 +813,27 @@
 
     /* modal */
     .modal__container h2{
-        font-size: 2rem;
+        font-size: 1.5rem;
         line-height: 45px;
     }
 
     .modal__info{
         font-size: 1rem;
     }
+
+    .cursos__container.single .card__curse {
+        width: 100%; /* Ancho para una sola tarjeta */
+        max-width: 400px;
+    }
+    
+    .cursos__container.two .card__curse {
+        width: 100%; /* Ancho para dos tarjetas */
+    }
+    
+    .cursos__container.multiple .card__curse {
+        width: 100%; /* Ancho para tres o más tarjetas */
+    }
+    
 }
 
 @media (max-width: 410px){
