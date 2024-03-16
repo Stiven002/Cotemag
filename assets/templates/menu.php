@@ -19,7 +19,7 @@
             <!-- Menu principal -->
             <nav class="header__menu">
                 <div class="menu__logos">
-                    <img class="menu__img" src="/cotemag_php/assets/img/Icons/LogoCotemag.png" loading="lazy" alt="Logo de Cotemag">
+                    <img class="menu__img" src="/cotemag/assets/img/Icons/LogoCotemag.png" loading="lazy" alt="Logo de Cotemag">
                     <div class="bugger__menu" id="menu-open">
                         <i class="fa-solid fa-bars bugger__menu-icon"></i>
                     </div>
@@ -27,16 +27,16 @@
                 <div class="menu__icons" id="menu">
                     <ul class="menu__list">
                         <li class="menu__close">
-                            <a href="/cotemag_php/index.php">Inicio </a></i>
+                            <a href="/cotemag/index.php">Inicio </a></i>
                         </li>
                         <li class="menu__list-item">
                             <a class="none__click" id="sub__menu-open">Oferta Academica <i class="fa-solid fa-angle-down"></i></a>
                             <ul class="short" id="submenu">
                                 <li>
-                                    <a href="/cotemag_php/assets/pages/gastronomia.php">Tecnicos</a>
+                                    <a href="/cotemag/assets/pages/areas.php">Tecnicos</a>
                                 </li>
                                 <li>
-                                    <a href="/cotemag_php/assets/pages/salud.php">Diplomados</a>
+                                    <a href="/cotemag/assets/pages/salud.php">Diplomados</a>
                                 </li>
                             </ul>
                         </li>
@@ -55,7 +55,7 @@
                             <a class="none__click" id="sub__menu-open2">Alianzas <i class="fa-solid fa-angle-down"></i></a>
                             <ul class="list__insti" id="submenu2">
                                 <li>
-                                    <a href="#">Convenios de practicas</a>
+                                    <a href="/assets/pages/Convenios de practicas.php">Convenios de practicas</a>
                                 </li>
                                 <li>
                                     <a href="#">Convenios intitucionales</a>
@@ -69,10 +69,10 @@
                                     <a href="#">Grados</a>
                                 </li>
                                 <li>
-                                    <a href="#">Instagram</a>
+                                    <a href="https://www.instagram.com/cotemagsm/">Instagram</a>
                                 </li>
                                 <li>
-                                    <a href="#">Eventos</a>
+                                    <a href="#eventos">Eventos</a>
                                 </li>
                             </ul>
                         </li>
@@ -80,13 +80,13 @@
                             <a class="none__click" id="sub__menu-open4">Administracion <i class="fa-solid fa-angle-down"></i></a>
                             <ul class="list__insti" id="submenu4">
                                 <li>
-                                    <a href="#">QIO Academico</a>
+                                    <a href="https://site4.q10.com/login?ReturnUrl=%2F&aplentId=73c46535-d1df-4c30-8340-44c2a135aae5">QIO Academico</a>
                                 </li>
                                 <li>
-                                    <a href="#">Consulta de egresados</a>
+                                    <a href="https://site2.q10.com/ResultadosAcademicos/Consultar?aplentId=73c46535-d1df-4c30-8340-44c2a135aae5">Consulta de egresados</a>
                                 </li>
                                 <li>
-                                    <a href="#">Pre-inscripciones</a>
+                                    <a href="https://site4.q10.com/Preinscripcion?aplentId=73c46535-d1df-4c30-8340-44c2a135aae5">Pre-inscripciones</a>
                                 </li>
                                 <li>
                                     <a href="#">Booking - Software</a>
@@ -105,7 +105,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">Contacto</a>
+                            <a href="#footer">Contacto</a>
                         </li>
                     </ul>
                 </div>

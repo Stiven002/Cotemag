@@ -1,8 +1,8 @@
     <!-- footer -->
-    <footer class="footer basic__style">
+    <footer class="footer basic__style" id="footer">
             <div class="footer__container width__basic">
                 <div class="footer__contact">
-                    <img src="/cotemag_php/assets/img/Icons/LogoCotemag.png" loading="lazy" alt="Cotemag logo">
+                    <img src="/cotemag/assets/img/Icons/LogoCotemag.png" loading="lazy" alt="Cotemag logo">
                     <div class="footer__tenic">
                         <div class="footer__soporte">
                             <h3>COTEMAG</h3>
