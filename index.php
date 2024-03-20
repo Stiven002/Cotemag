@@ -163,86 +163,8 @@ include("./assets/templates/carousel.php");
             <div class="video__fondo basic__style"></div>
 
 
-            <div class="acordeon">
-                    <div class="news__cards-title titulo_acor">
-                        <h3>Prácticas</h3>
-                        <p>Conoce Los Requisitos Para Presentar Las Prácticas</p>
-                    </div>
-                <div class="accordion" id="accordionPanelsStayOpenExample1">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne1" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                        <h2 class="my-3">Requisitos</h2>
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseOne1" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                        <div class="modulos">
-                            <ul>
-                                <li>Solicitud de prácticas formativas (Formato entregado en COTEMAG)</li>
-                                <li>Dos hoja de vida impresa a color en el formato de COTEMAG</li>
-                                <li>Dos foto 3x4 fondo azul tipo documento (No escaneada, No tipo selfie)</li>
-                                <li>Dos fotocopia del documento de identidad al 100%</li>
-                                <li>Una fotocopia del documento de identidad al 150%</li>
-                                <li>Esquema de vacunación al día para el área de salud</li>
-                                <li>Dos certificado de Fosyga</li>
-                                <li>Dos fotocopia del Seguro Estudiantil o recibo de pago del mismo</li>
-                                <li>Una fotocopia del recibo de pago de pólizas</li>
-                                <li>Paz y salvo académico</li>
-                                <li>Paz y salvo financiero</li>
-                                <li>Permiso de trabajo notariado para menores de edad.</li>
-                                <li>Certificado de la procuraduría</li>
-                                <li>Certificado de contraloría</li>
-                                <li>Certificado de policía</li>  
-                                <li>Fotocopia del diploma de bachiller y de otros estudios incluyendo seminarios realizados en COTEMAG (Una fotocopia de cada documento)</li>
-                                <li>Una carpeta blanca</li>
-                            </ul>
-                        </div>
-                        </div>
-                    </div>
-                </div>  
-            </div>
-
-                <div class="accordion" id="accordionPanelsStayOpenExample2">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne2" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                <h2 class="my-3">Anexsos de Prácticas</h2>
-                                </button>
-                            </h2>
-                            <div id="panelsStayOpen-collapseOne2" class="accordion-collapse collapse show">
-                                <div class="accordion-body">
-                                <div class="modulos2">
-                                    <div>
-                                        <p>El estudiante deberá presentar copia de la hoja de vida al momento de la entrevista en la empresa interesada. El estudiante deberá anexar soportes físicos de la información académica y datos personales. En caso de ser menor de edad, se debe anexar permiso laboral autenticado por parte de los padres o representantes. Los practicantes en el Área de la Salud deben anexar fotocopia del Certificado de Vacunas.</p>
-                                    </div>
-                                    <div class="formatos">
-                                        <div>
-                                            <h3>Formato solicitud de prácticas</h3>
-                                            <p>Este documento esta diseñado en Microsoft Word (docx), el cual es desarrollado por Sistema de Gestión de la Calidad - Corporación Técnica del Magdalena con el título de SOLICITUD DE PRÁCTICAS FORMATIVAS Código: GC-FO07.</p>
-                                            <a href="/assets/CNC-GC-FO07SolicituddePrácticasFormativas.doc" download="SolicituddePrácticasFormativas">
-                                            <i class="fa-solid fa-newspaper"></i> Descargar
-                                            </a>
-
-                                        </div>
-                                        <div>
-                                            <h3>Hoja de Vida</h3>
-                                            <p>Este documento esta diseñado en Microsoft Word (docx), el cual es desarrollado por Sistema de Gestión de la Calidad - Corporación Técnica del Magdalena HOJA DE VIDA DE PRACTICANTES Código: GC-FO08.</p>
-                                            <a href="/assets/CNC-GC-FO08HojadeVidadePracticantes.doc" download="SolicituddePrácticasFormativas">
-                                            <i class="fa-solid fa-newspaper"></i> Descargar
-                                            </a>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                        </div>  
-                    </div>
-                </div>   
-            </div>
             <!-- noticas -->
-            <article class="news__container basic__style">
+            <article class="news__container basic__style" id="eventos">
                 <div class="news__cards width__basic">
                     <div class="news__cards-title ">
                         <h3>Noticias y Eventos</h3>

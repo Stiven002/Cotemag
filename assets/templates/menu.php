@@ -3,15 +3,15 @@
             <div class="header__menu-top">
                 <div class="menu__top-container width__basic">
                     <div class="menu__top-contact">
-                        <a href="#" class="contect__link">(+57) 302 369 2559</a>
-                        <a href="#" class="contect__link">cotemag@cotemag.edu.co</a>
+                        <a href="https://api.whatsapp.com/send?phone=573004813444&text=Hola%2C+estoy+interesado+en+matricularme+en+COTEMAG" class="contect__link">(+57) 302 369 2559</a>
+                        <a href="cotemag@cotemag.edu.co" class="contect__link">cotemag@cotemag.edu.co</a>
                     </div>
                     <div class="menu__top--social-media">
                         <div class="social__media-icons">
-                            <a href="#"><i class="fa-brands fa-facebook-f social__icon"></i></a>
-                            <a href="#"><i class="fa-brands fa-x-twitter social__icon"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram social__icon"></i></a>
-                            <a href="#"><i class="fa-brands fa-linkedin-in social__icon"></i></a>
+                            <a href="https://www.facebook.com/cotemagsm"><i class="fa-brands fa-facebook-f social__icon"></i></a>
+                            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fcotemag"><i class="fa-brands fa-x-twitter social__icon"></i></a>
+                            <a href="https://www.instagram.com/cotemagsm/"><i class="fa-brands fa-instagram social__icon"></i></a>
+                            <a href="https://www.linkedin.com/company/cotemag/"><i class="fa-brands fa-linkedin-in social__icon"></i></a>
                         </div>
                     </div>
                 </div>
@@ -27,16 +27,19 @@
                 <div class="menu__icons" id="menu">
                     <ul class="menu__list">
                         <li class="menu__close">
-                            <a href="/cotemag/index.php">Inicio </a></i>
+                            <a href="/index.php">Inicio </a></i>
                         </li>
                         <li class="menu__list-item">
                             <a class="none__click" id="sub__menu-open">Oferta Academica <i class="fa-solid fa-angle-down"></i></a>
                             <ul class="short" id="submenu">
                                 <li>
-                                    <a href="/cotemag/assets/pages/areas.php">Tecnicos</a>
+                                    <a href="/assets/pages/areas.php">Tecnicos</a>
                                 </li>
                                 <li>
                                     <a href="/cotemag/assets/pages/salud.php">Diplomados</a>
+                                </li>
+                                <li>
+                                    <a href="#">Gastronomía</a>
                                 </li>
                             </ul>
                         </li>
@@ -44,21 +47,18 @@
                             <a class="none__click" id="sub__menu-open1">Nuestro Personal <i class="fa-solid fa-angle-down"></i></a>
                             <ul class="list__insti short" id="submenu1">
                                 <li>
-                                    <a href="#">Docentes</a>
+                                    <a href="/assets/pages/Docentes.php">Docentes y Administrativos</a>
                                 </li>
-                                <li>
-                                    <a href="#">Administrativos</a>
-                                </li>
+                                <!-- <li>
+                                    <a href="#"></a>
+                                </li> -->
                             </ul>
                         </li>
                         <li class="menu__list-item">
                             <a class="none__click" id="sub__menu-open2">Alianzas <i class="fa-solid fa-angle-down"></i></a>
                             <ul class="list__insti" id="submenu2">
                                 <li>
-                                    <a href="/assets/pages/Convenios de practicas.php">Convenios de practicas</a>
-                                </li>
-                                <li>
-                                    <a href="#">Convenios intitucionales</a>
+                                    <a href="/assets/pages/Convenios de practicas.php">Convenios Y practicas</a>
                                 </li>
                             </ul>
                         </li>
@@ -97,12 +97,12 @@
                             </ul>
                         </li>
                         <li class="menu__list-item">
-                            <a class="none__click" id="sub__menu-open5">Desarrollo Web <i class="fa-solid fa-angle-down"></i></a>
-                            <ul class="list__insti" id="submenu5">
+                            <a class="none__click" id="sub__menu-open5" href="/assets/pages/gastronomia.php">Desarrollo Web</a>
+                            <!-- <ul class="list__insti" id="submenu5">
                                 <li>
-                                    <a href="#">Consultor DevCom</a>
+                                    
                                 </li>
-                            </ul>
+                            </ul> -->
                         </li>
                         <li>
                             <a href="#footer">Contacto</a>
