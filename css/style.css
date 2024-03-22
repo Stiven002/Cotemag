@@ -110,72 +110,56 @@
 
 
 /* swiper */
-.swiper{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-
-.swiper__slide-img{
-    height: 100vh;
-}
-
-
-.swiper__cortine{
-    width: 100%;
-    height: 100%;
-    background-color: #00000053;
-    position: absolute;
-} 
-
 .swiper__info{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
     z-index: 2;
-}
-
-.swiper__info-container{
+    background-color: #0000005f;
+  }
+  
+  .swiper__info-container{
+    width: 100%;
+    max-width: 1200px;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.swiper__title-nav{
+  }
+  
+  .swiper__title-nav{
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: -12rem;
-}
-
-.swiper__title{
+  }
+  
+  .swiper__title{
     display: flex;
     flex-direction: column;
     gap: 2rem;
     align-items: flex-start;
-}
-
-.swiper__title h1{
+  }
+  
+  .swiper__title h1{
     font-size: 3rem;
     line-height: 65px;
     font-weight: 600;
     cursor: default;
     color: var(--white);
-}
-
-.swiper__title h2{
+  }
+  
+  .swiper__title h2{
     font-size: 1.5rem;
     cursor: default;
     color: var(--white);
-}
-
-.swiper__title a{
+  }
+  
+  .swiper__title a{
     border-width: 1px #000;
     cursor: pointer;
     padding: 1rem 3.5rem;
@@ -185,20 +169,20 @@
     font-weight: 600;
     border: 2px solid var(--white);
     color: var(--white);
-}
-
-.swiper__title a:hover{
+  }
+  
+  .swiper__title a:hover{
     background-color: var(--primar-color-sub);
     color: #257cab;
-}
-
-.swiper__navegation-buttons{
+  }
+  
+  .swiper__navegation-buttons{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-}
-
-.arrow__container{
+  }
+  
+  .arrow__container{
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -207,39 +191,76 @@
     align-items: center;
     cursor: pointer;
     border: 2px solid #fff;
-}
-
-.arrow__container:hover{
+  }
+  
+  .arrow__container:hover{
     background-color: var(--white);
-}
-
-.arrow__container i{
+  }
+  
+  .arrow__container i{
     color: var(--white);
-}
-
-.arrow__container:hover i{
+  }
+  
+  .arrow__container:hover i{
     color: #257cab;
-}
-
-.swiper__navegation-1{
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-    position: absolute;
-    left: 4% !important;
-    top: 35% !important;
-    bottom: 0px !important;
-    width: auto !important;
-}
-
-
-.swiper__navegation.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal{
-    height: 100px !important;
-}
-
-.swiper-pagination-bullet.swiper-pagination-bullet-active{
-    background-color: var(--white);
-}
+  }
+  
+  
+  
+  
+    
+    .carousel-container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    
+    .carousell {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .carousel-item {
+      flex: 0 0 100%;
+      box-sizing: border-box;
+      text-align: center;
+      font-size: 2em;
+      height: 100%;
+    }
+  
+    .carousel-item img{
+      height: 100%;
+    }
+  
+    
+    .dots-container {
+      display: flex;
+      gap: .5rem;
+      flex-direction: column;
+      position: absolute;
+      left: 4%;
+      top: 50%;
+      bottom: 0px;
+      transform: translateX(-50%);
+      display: flex;
+      z-index: 3;
+    }
+    
+  .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #888;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .dot-active{
+    background-color: #fff;
+  }
 
 /* seccion del main */
 .main{
@@ -336,6 +357,7 @@
 .course__title h2{
     font-weight: 600;
     font-size: 30px;
+    color: var(--secundari-color);
 }
 
 .cursos__title-des{
@@ -475,10 +497,6 @@
     .swiper__title h1{
         font-size: 2.5rem;
     }
-
-    .swiper__navegation-1{
-        left: 0% !important;
-    }
 }
 
 @media (max-width: 1200px){
@@ -487,10 +505,6 @@
 
     .header{
         height: 95vh;
-    }
-
-    .swiper__navegation-1{
-        display: none;
     }
 
     .swiper__navegation-buttons{
@@ -523,12 +537,7 @@
     .news__container{
         padding: 6rem 0rem 2rem 0rem;
     }
-
-    
-
 }
-
-
 
 @media(max-width: 980px){
 
@@ -546,6 +555,10 @@
     .main__card{
         width: 48%;
         height: 400px;
+    }
+
+    .dots-container{
+        display: none;
     }
 }
 
