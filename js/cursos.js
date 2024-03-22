@@ -1,8 +1,9 @@
 const carrousel = document.querySelector(".carrousel"),
-    firstItem = carrousel.querySelector(".item_carousel"), // Utiliza querySelector en lugar de querySelectorAll
+    firstItem = carrousel.querySelector(".item_carousel"),
     arrowIcons = document.querySelectorAll(".arrow");
 
 let isDragStar = false, isDraging = false, prevPageX, prevScrollLeft;
+let intervalId = null; // Variable para mantener el ID del intervalo
 
 const showHideIcon = () => {
     const scrollWidth = carrousel.scrollWidth - carrousel.clientWidth;
@@ -13,7 +14,7 @@ const showHideIcon = () => {
 arrowIcons.forEach(icon => {
     icon.addEventListener("click", () => {
         let firstItemWidth = firstItem.clientWidth + 16;
-        carrousel.scrollLeft += icon.id == "left" ? -firstItemWidth : firstItemWidth; // Corregir la variable a firstItemWidth
+        carrousel.scrollLeft += icon.id == "left" ? -firstItemWidth : firstItemWidth;
         setTimeout(() => showHideIcon(), 60);
     });
 });
@@ -67,5 +68,17 @@ const moveAutomatically = () => {
     setTimeout(() => showHideIcon(), 60);
 };
 
-// Llamar a la función cada 5 segundos
-setInterval(moveAutomatically, 5000);
+// Iniciar el carrusel automáticamente
+intervalId = setInterval(moveAutomatically, 5000);
+
+// Detectar cambios en el fragmento de URL (hashchange)
+window.addEventListener('hashchange', () => {
+    // Detener el carrusel si el elemento con el selector :target está activo
+    if (document.querySelector(':target')) {
+        clearInterval(intervalId); // Limpiar el intervalo existente
+        intervalId = null; // Restablecer el ID del intervalo
+    } else if (!intervalId) {
+        // Reanudar el carrusel si no hay ningún elemento :target activo y no hay un intervalo existente
+        intervalId = setInterval(moveAutomatically, 5000);
+    }
+});
