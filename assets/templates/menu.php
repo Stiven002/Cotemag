@@ -36,7 +36,7 @@
                                     <a href="/cotemag/assets/pages/areas.php">Tecnicos</a>
                                 </li>
                                 <li>
-                                    <a href="/cotemag/assets/pages/salud.php">Diplomados</a>
+                                    <a href="#">Diplomados</a>
                                 </li>
                             </ul>
                         </li>
