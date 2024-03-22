@@ -8,10 +8,8 @@
     <link rel="stylesheet" href="./css/carrousel.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./assets/img/Icons/LogoCotemag.png">
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-        <!--Importando librerias de font-awesome-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Importando librerias de font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Cotemag</title>
 </head>
 <body>
@@ -23,43 +21,41 @@
     <header class="header basic__style">
         <?php include("./assets/templates/menu.php") ?>
         <!-- Swiper -->
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                    <div class="swiper__info">
-                        <div class="swiper__info-container width__basic">
-                            <div class="swiper__navegation-1">
-                            </div>
-                            <div class="swiper__title-nav">
-                                <div class="swiper__title">
-                                    <h1>CORPORACION TECNICA <br>DEL MAGDALENA </h1>
-                                    <h2>Elige la carrera de tus sueños a tan solo un click</h2>
-                                    <a href="#">Aplicar</a>
-                                </div>
-                                <div class="swiper__navegation-buttons">
-                                    <div class="arrow__container arrow-next">
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </div>
-                                    <div class="arrow__container arrow-prev">
-                                        <i class="fa-solid fa-arrow-left"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper__cortine"></div>
-                        <img class="swiper__slide-img" src="https://www.cotemag.edu.co/uploads/images/system/public/slider/2.png" loading="lazy" alt="chica con libros">
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper__cortine"></div>
-                        <img class="swiper__slide-img" src="https://www.cotemag.edu.co/uploads/images/system/public/slider/7.png" loading="lazy" alt="joven con computadora">
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper__cortine"></div>
-                        <img class="swiper__slide-img" src="https://www.cotemag.edu.co/uploads/images/system/public/slider/265162.png" loading="lazy" alt="jovenes estudiando">
-                    </div>
+        <div class="swiper__info">
+            <div class="swiper__info-container width__basic">
+                <div class="swiper__title-nav">
+                    <div class="swiper__title">
+                    <h1>CORPORACION TECNICA <br>DEL MAGDALENA </h1>
+                    <h2>Elige la carrera de tus sueños a tan solo un click</h2>
+                    <a href="#">Aplicar</a>
+                </div>
+                <div class="swiper__navegation-buttons">
+                    <div class="arrow__container arrow-header prev"><i class="fas fa-angle-left"></i></div>
+                    <div class="arrow__container arrow-header next"><i class="fas fa-angle-right"></i></div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="carousel-container">
+            <div class="carousell">
+                <div class="carousel-item">
+                    <img src="https://www.cotemag.edu.co/uploads/images/system/public/slider/2.png" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.cotemag.edu.co/uploads/images/system/public/slider/7.png" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.cotemag.edu.co/uploads/images/system/public/slider/265162.png" alt="">
                 </div>
         </div>
+
+        <div class="dots-container">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
     </header>
 
     <main class="main basic__style">
@@ -91,62 +87,50 @@
         <h2>Cursos</h2>
         <div class="cursos__title-des">
             <p>Conoce nuestros cursos y consigue el curso de tus sueños</p>
-            <a href="#">Conocer mas <i class="fas fa-angle-right"></i></a>
+            <a href="./assets/pages/areas.php">Conocer mas <i class="fas fa-angle-right"></i></a>
         </div>
 
     </section>
 
-<?php
-
-
-// Define un array con los conjuntos de datos para el carrusel
-$carouselDataArray = [
-    [
-        'pageImg' => "https://www.cotemag.edu.co//uploads/images/system/private/servicios/Enfermeria.jpeg",
-        'pageEtique' => "Salud",
-        'pageTitle' => "Auxiliar de Enfermeria",
-        'pageTime' => "1 año y medio",
-        'pageModuls' => "18 Módulos",
-        'pageSemestre' => "3 Semestres",
-    ],
-    [
-        'pageImg' => "https://www.cotemag.edu.co//uploads/images/system/private/servicios/Salud_Oral_1080x10801.jpeg",
-        'pageEtique' => "Salud",
-        'pageTitle' => "Auxiliar en Salud Oral",
-        'pageTime' => "1 año y medio",
-        'pageModuls' => "18 Módulos",
-        'pageSemestre' => "3 Semestres",
-    ],
-    [
-        'pageImg' => "https://www.cotemag.edu.co//uploads/images/system/private/servicios/Servicios_Farmaceuticos1.jpeg",
-        'pageEtique' => "Salud",
-        'pageTitle' => "Auxiliar en Salud Oral",
-        'pageTime' => "1 año",
-        'pageModuls' => "18 Módulos",
-        'pageSemestre' => "3 Semestres",
-    ],
-    [
-        'pageImg' => "https://www.cotemag.edu.co//uploads/images/system/private/servicios/Auxiliar_Contable1.jpeg",
-        'pageEtique' => "Administrativa",
-        'pageTitle' => "Auxiliar Contable",
-        'pageTime' => "1 año",
-        'pageModuls' => "12 Módulos",
-        'pageSemestre' => "2 Semestres",
-    ],
-    [
-        'pageImg' => "https://www.cotemag.edu.co//uploads/images/system/private/servicios/Auxiliar_Contable1.jpeg",
-        'pageEtique' => "Administrativa",
-        'pageTitle' => "Auxiliar Contable",
-        'pageTime' => "1 año",
-        'pageModuls' => "12 Módulos",
-        'pageSemestre' => "2 Semestres",
-    ],
-];
-
-// Incluye el template del carrusel y pasa el array de datos
-$carouselData = $carouselDataArray;
-include("./assets/templates/carousel.php");
-?>
+    <section class="width__basic">
+        <?php  include './assets/templates/cards.php'; ?>
+    <div class="wrapper">
+        <i id="left" class="arrow fas fa-angle-left"></i>
+        <div class="carrousel">
+                <div class="item_carousel" draggable="false">
+                <?php
+                    // Llama a la función para generar la tarjeta y el modal
+                    generarTarjetaYModal($cardContable, 0);
+                    ?>
+                </div>
+                <div class="item_carousel" draggable="false">
+                <?php
+                    // Llama a la función para generar la tarjeta y el modal
+                    generarTarjetaYModal($cardAdministrativo, 1);
+                    ?>
+                </div>
+                <div class="item_carousel" draggable="false">
+                <?php
+                    // Llama a la función para generar la tarjeta y el modal
+                    generarTarjetaYModal($cardWeb, 2);
+                    ?>
+                </div>
+                <div class="item_carousel" draggable="false">
+                <?php
+                    // Llama a la función para generar la tarjeta y el modal
+                    generarTarjetaYModal($cardEnfermeria, 3);
+                    ?>
+                </div>
+                <div class="item_carousel" draggable="false">
+                <?php
+                    // Llama a la función para generar la tarjeta y el modal
+                    generarTarjetaYModal($cardFarmacia, 4);
+                    ?>
+                </div>
+        </div>
+        <i id="right" class="arrow fas fa-angle-right"></i>
+    </div>
+</section>
 
 
 
@@ -209,9 +193,10 @@ include("./assets/templates/carousel.php");
             </article>
     </main>
 
+
+
     <?php include("./assets/templates/footer.php") ?>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/cursos.js"></script>
     <script src="./js/menu.js"></script>
